@@ -13,6 +13,11 @@ public class SpringAzureDemoApplication {
 	public String message(){
 		return "Congrats ! your application deployed successfully in Azure Platform123. !";
 	}
+	
+	@GetMapping("/welcome")
+	public String sMessage() {
+		return "Hi Praneeth am from Hyderabd.....";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringAzureDemoApplication.class, args);
